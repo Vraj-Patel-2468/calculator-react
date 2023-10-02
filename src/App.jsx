@@ -53,25 +53,21 @@ const App = ()=> {
           className="remove-digit-button"
           onClick={() => dispatch({ type: ACTION.REMOVE_DIGIT })}
         ><img src={deleteImage} alt="clear-previous-digit" width="20px" /></button>
-        <Operationbutton value="+" type={ACTION.OPERATE} dispatch={dispatch} />
+        <Digitbutton value={0} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
+        <Digitbutton value={1} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
+        <Digitbutton value={2} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
+        <Digitbutton value={3} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
+        <Digitbutton value={4} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
+        <Digitbutton value={5} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
+        <Digitbutton value={6} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
         <Digitbutton value={7} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
         <Digitbutton value={8} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
         <Digitbutton value={9} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
         <Operationbutton value="-" type={ACTION.OPERATE} dispatch={dispatch} />
-        <Digitbutton value={4} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
-        <Digitbutton value={5} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
-        <Digitbutton value={6} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
         <Operationbutton value="/" type={ACTION.OPERATE} dispatch={dispatch} />
-        <Digitbutton value={1} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
-        <Digitbutton value={2} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
-        <Digitbutton value={3} type={ACTION.ADD_DIGIT} dispatch={dispatch} />
         <Operationbutton value="*" type={ACTION.OPERATE} dispatch={dispatch} />
-        <button
-          className="digit-button"
-          onClick={() => dispatch({ type: ACTION.ADD_DIGIT, value: 0 })}
-        > 0 </button>
-        <button
-          className="equal-button"
+        <Operationbutton value="+" type={ACTION.OPERATE} dispatch={dispatch} />
+        <button className="equal-button"
           onClick={() => dispatch({ type: ACTION.EQUATE })}
         > = </button>
       </div>
