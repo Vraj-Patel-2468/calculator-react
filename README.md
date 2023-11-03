@@ -19,4 +19,4 @@ To run this project, you need to have [Node.js](https://nodejs.org/) and [npm](h
 2. change the directory to the calculator-app and run the following commands to view the project :
    ```shell
    npm run start
-Fell free to ask for any doubt regarding the project on "codingsloth996@gmail.com".
+Feel free to ask for any doubt regarding the project on "codingsloth996@gmail.com".
